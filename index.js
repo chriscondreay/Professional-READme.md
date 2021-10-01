@@ -7,22 +7,43 @@ const questions = [
   {
     type: 'input',
     name: 'name',
-    message: 'What is the name of your project',
+    message: 'What is the name of your project?',
   },
   {
     type: 'input',
-    name: 'problem',
-    message: 'What is the purpose of your project',
+    name: 'description',
+    message: 'What is the purpose of your project?',
   },
   {
     type: 'input',
-    name: 'name',
-    message: 'What is the name of your project',
+    name: 'description',
+    message: 'What was your motivation for the project?',
   },
   {
     type: 'input',
-    name: 'name',
-    message: 'What is the name of your project',
+    name: 'description',
+    message: 'What were some of the hardships and challenges that you faced? What did you do, if any, to solve them?',
+  },
+  {
+    type: 'input',
+    name: 'install',
+    message: 'What were the steps taken to install your project',
+  },
+  {
+    type: 'input',
+    name: 'credits',
+    message: 'Did you collaborate with anyone?',
+  },
+  {
+    type: 'input',
+    name: 'license',
+    message: 'What license type would you like to choose?',
+    options: ['MIT', 'Apache', 'The Unlicense']
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?',
   },
 ];
 
