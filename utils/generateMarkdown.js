@@ -71,6 +71,8 @@ function generateMarkdown(data) {
   ## Badges
   ${renderLicenseBadge(data.license)}
 
+  ## Uploaded demo watch here,
+  https://youtu.be/vOVuK-NbLZs
 `;
 };
 
