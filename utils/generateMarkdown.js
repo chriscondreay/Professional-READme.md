@@ -6,13 +6,13 @@ function renderLicenseBadge(license) {
   const unlicense = "The Unlicense"
   switch (license) {
     case mitLicense:
-      return `[!License](https://img.shields.io/badge/License-MIT-blue.svg)]`;
+      return `[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)]`;
       break;
     case apacheLicense:
-      return `[!License](https://img.shields.io/badge/License-Apache%202.0-green.svg)]`;
+      return `[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)]`;
       break;
     case unlicense:
-      return `[!License](https://img.shields.io/badge/License-Unlicense-red.svg)]`
+      return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-red.svg)]`;
     default:
       break;
   }
@@ -20,7 +20,9 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
