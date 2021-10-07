@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const genMarkdown = require('./utils/generateMarkdown')
+const genMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -38,7 +38,7 @@ const questions = [
     type: 'input',
     name: 'license',
     message: 'What license type would you like to choose?',
-    options: ['MIT', 'Apache', 'The Unlicense']
+    choices: ['MIT', 'Apache', 'The Unlicense'],
   },
   {
     type: 'input',
@@ -51,9 +51,9 @@ const questions = [
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, function(err) {
     if (err) {
-      return (err);
+      return console.log(err);
     }
-      return('file written')
+      console.log('File written! Check the README.md')
   })
 }
 
@@ -62,7 +62,7 @@ const init = () => {
   inquirer.prompt(questions)
   .then (answers => {
     const md = genMarkdown(answers)
-    writeToFile('READMe.md', md)
+    writeToFile("README.md", md)
   })
 }
 
